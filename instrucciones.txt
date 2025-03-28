@@ -1,0 +1,41 @@
+CONVERTIDOR DE MARKDOWN A HTML
+--------------------------
+
+DESCRIPCIÓN:
+Este programa convierte un archivo Markdown (.md) en un archivo HTML (.html).
+
+CARACTERÍSTICAS:
+- Convierte encabezados (#, ##, ###)
+- Admite **negrita**, *cursiva* y `código en línea`
+- Gestiona listas desordenadas (- elemento)
+- Puedes cambiar el contenido de input.md
+
+USO:
+1. Compilar el programa:
+g++ markdowntohtml.cpp -o markdown_converter
+
+2. Ejecutar el programa:
+markdown_converter input.md output.html
+
+Si no se proporcionan nombres de archivo, se usan por defecto "input.md" y "output.html".
+
+3. Abrir "output.html" en un navegador para ver la salida formateada.
+
+EJEMPLO DE ENTRADA (input.md):
+-------------------------
+# Mi título
+## Mi subtítulo
+**Texto en negrita** y *Texto en cursiva*
+- Primer elemento
+- Segundo elemento
+
+EJEMPLO DE SALIDA (output.html):
+-----------------------------
+<h1>Mi título</h1>
+<h2>Mi subtítulo</h2>
+<b>Texto en negrita</b> y <i>Texto en cursiva</i>
+<ul><li>Primer elemento</li></ul>
+<ul><li>Segundo elemento</li></ul>
+
+LICENCIA:
+Este proyecto es de código abierto y de uso gratuito.
